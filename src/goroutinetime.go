@@ -23,13 +23,13 @@ func routine(name string, delay time.Duration) {
 func main() {
 	rand.Seed(time.Now().Unix())
 
-	// var name string
-	// for i := 0; i < 3; i++ {
-	// 	name = fmt.Sprintf("go_%02d", i)
-	// 	go routine(name, time.Duration(rand.Intn(5))*time.Second)
-	// }
+	var name string
+	for i := 0; i < 3; i++ {
+		name = fmt.Sprintf("go_%02d", i)
+		go routine(name, time.Duration(rand.Intn(5))*time.Second)
+	}
 
-	routine("shipl", time.Duration(rand.Intn(5))*time.Second)
+	//routine("shipl", time.Duration(rand.Intn(5))*time.Second)
 
 	var input string
 	fmt.Scanln(&input)

@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"runtime"
-	"time"
-)
+	/*
+		"runtime"
+		"time"
+	*/)
 
 var a int = 1
 
@@ -20,16 +21,15 @@ func sleep(i int) {
 }
 
 func main() {
-	// go f("goroutine")
+	go f("goroutine")
 
-	// go func(msg string) {
-	// 	fmt.Println(msg)
-	// }("going")
-
-	// time.Sleep(100)
-
-	runtime.GOMAXPROCS(runtime.NumCPU())
-	go sleep(1)
-	time.Sleep(time.Microsecond)
-	fmt.Println("end", 1)
+	go func(msg string) {
+		fmt.Println(msg)
+	}("going")
+	/*
+		runtime.GOMAXPROCS(runtime.NumCPU())
+		go sleep(1)
+		time.Sleep(time.Microsecond)
+		fmt.Println("end", 1)
+	*/
 }

@@ -47,4 +47,7 @@ func main() {
 		fmt.Println(sh.perimeter())
 	}
 
+	sh1 := &r
+	fmt.Println("接口指针调用：", sh1.area())
+
 }
