@@ -4,4 +4,4 @@
 /src/github.com/*
 /src/golang.org/*
 /src/.DS_Store
-.DS_Store
+*.DS_Store
