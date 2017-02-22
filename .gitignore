@@ -3,5 +3,10 @@
 /pkg
 /src/github.com/*
 /src/golang.org/*
+/src/echo-mw
+/src/echo-web
+/src/go-echo-vue
+/src/go-web-api-demo
+/src/gorm_example
 /src/.DS_Store
 *.DS_Store
