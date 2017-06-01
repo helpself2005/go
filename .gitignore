@@ -6,7 +6,12 @@
 /src/echo-mw
 /src/echo-web
 /src/go-echo-vue
+<<<<<<< HEAD
 /src/gorm_example
 /src/go-web-api-demo
+=======
+/src/go-web-api-demo
+/src/gorm_example
+>>>>>>> 1ba536b8691da3a5a25f9ee1caf05d508b6108f4
 /src/.DS_Store
 *.DS_Store
