@@ -1,0 +1,42 @@
+--- contention:
+cycles/second=3284327834
+1359986504454 7732382 @ 0x464f15 0x4ba9c4 0x4ba32a 0x4ba432 0x4ba5c6 0x4ba6bc 0x4ba96e 0x4c96fd 0x454161
+#	0x464f14	sync.(*Mutex).Lock+0xf4			C:/Go/src/sync/mutex.go:134
+#	0x4ba9c3	math/rand.(*lockedSource).Int63+0x33	C:/Go/src/math/rand/rand.go:323
+#	0x4ba329	math/rand.(*Rand).Int63+0x39		C:/Go/src/math/rand/rand.go:82
+#	0x4ba431	math/rand.(*Rand).Int31+0x31		C:/Go/src/math/rand/rand.go:96
+#	0x4ba5c5	math/rand.(*Rand).Int31n+0x55		C:/Go/src/math/rand/rand.go:131
+#	0x4ba6bb	math/rand.(*Rand).Intn+0x4b		C:/Go/src/math/rand/rand.go:145
+#	0x4ba96d	math/rand.Intn+0x3d			C:/Go/src/math/rand/rand.go:277
+#	0x4c96fc	puzzlers/article37/common/op.send+0x6c	E:/WorkSpace/go/src/puzzlers/article37/common/op/block.go:40
+
+210779413848 90 @ 0x466059 0x4c965c 0x4b9bc1 0x4e329e 0x4e2d6f 0x42d012 0x454161
+#	0x466058	sync.(*WaitGroup).Wait+0x78			C:/Go/src/sync/waitgroup.go:131
+#	0x4c965b	puzzlers/article37/common/op.BlockProfile+0x16b	E:/WorkSpace/go/src/puzzlers/article37/common/op/block.go:32
+#	0x4b9bc0	puzzlers/article37/common.Execute+0x110		E:/WorkSpace/go/src/puzzlers/article37/common/common.go:32
+#	0x4e329d	main.genProfile+0x42d				E:/WorkSpace/go/src/puzzlers/article37/q4/demo99.go:68
+#	0x4e2d6e	main.main+0xfe					E:/WorkSpace/go/src/puzzlers/article37/q4/demo99.go:50
+#	0x42d011	runtime.main+0x221				C:/Go/src/runtime/proc.go:195
+
+210768695895 90 @ 0x466059 0x4c9cd2 0x454161
+#	0x466058	sync.(*WaitGroup).Wait+0x78				C:/Go/src/sync/waitgroup.go:131
+#	0x4c9cd1	puzzlers/article37/common/op.BlockProfile.func1+0x31	E:/WorkSpace/go/src/puzzlers/article37/common/op/block.go:23
+
+138043797876 13950723 @ 0x40452b 0x4c97d1 0x454161
+#	0x40452a	runtime.chanrecv2+0x2a				C:/Go/src/runtime/chan.go:393
+#	0x4c97d0	puzzlers/article37/common/op.receive+0x70	E:/WorkSpace/go/src/puzzlers/article37/common/op/block.go:47
+
+92922642301 15204370 @ 0x403753 0x4c971f 0x454161
+#	0x403752	runtime.chansend1+0x42			C:/Go/src/runtime/chan.go:113
+#	0x4c971e	puzzlers/article37/common/op.send+0x8e	E:/WorkSpace/go/src/puzzlers/article37/common/op/block.go:41
+
+55331491 315 @ 0x464f15 0x4ba9c4 0x4ba32a 0x4ba432 0x4ba5ea 0x4ba6bc 0x4ba96e 0x4c96fd 0x454161
+#	0x464f14	sync.(*Mutex).Lock+0xf4			C:/Go/src/sync/mutex.go:134
+#	0x4ba9c3	math/rand.(*lockedSource).Int63+0x33	C:/Go/src/math/rand/rand.go:323
+#	0x4ba329	math/rand.(*Rand).Int63+0x39		C:/Go/src/math/rand/rand.go:82
+#	0x4ba431	math/rand.(*Rand).Int31+0x31		C:/Go/src/math/rand/rand.go:96
+#	0x4ba5e9	math/rand.(*Rand).Int31n+0x79		C:/Go/src/math/rand/rand.go:133
+#	0x4ba6bb	math/rand.(*Rand).Intn+0x4b		C:/Go/src/math/rand/rand.go:145
+#	0x4ba96d	math/rand.Intn+0x3d			C:/Go/src/math/rand/rand.go:277
+#	0x4c96fc	puzzlers/article37/common/op.send+0x6c	E:/WorkSpace/go/src/puzzlers/article37/common/op/block.go:40
+
